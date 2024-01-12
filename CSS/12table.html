@@ -1,0 +1,154 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        table.a, td.a, th.a {
+            border: 1px solid;
+        }
+
+        td.a {
+            height: 50px;
+            text-align: center;
+            vertical-align: top;
+
+        }
+        tr:hover {
+            background-color: coral;
+        }
+
+        tr:nth-child(even) {
+            background-color: gray;
+        }
+
+        table.b {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table.b th, table.b td {
+            border-bottom: 1px solid grey;
+            padding: 8px;
+        }
+
+        table.c {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table.c th, table.c td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(197, 197, 197);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <table class="a">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table class="b">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <div class="c" style="overflow-x: auto;">
+        <table>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Adam</td>
+            <td>Johnson</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+          </tr>
+        </table>
+      </div>
+
+</body>
+
+</html>
