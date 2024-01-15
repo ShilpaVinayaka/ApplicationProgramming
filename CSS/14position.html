@@ -47,14 +47,59 @@
 
         .sticky {
             position: sticky;
-            position: -webkit-sticky; /* Safari */
-            top: 0; /*top/right/left/bottom should be mentioned*/
+            position: -webkit-sticky;
+            /* Safari */
+            top: 0;
+            /*top/right/left/bottom should be mentioned*/
             padding: 5px;
-            background-color:  #73AD21;
+            background-color: #73AD21;
             border: 2px solid green;
-            
+
         }
 
+        .container {
+            position: relative;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .topLeft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+
+        .topRight {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+
+        .bottomRight {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+
+        .bottomLeft {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+        }
+
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+        }
     </style>
 
 </head>
@@ -111,7 +156,20 @@
             Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
     </div>
 
+    <h2>Image Text</h2>
 
+    <p>Center text in image:</p>
+
+    <div class="container">
+        <img src="https://images3.alphacoders.com/165/thumb-1920-165265.jpg" alt="Cinque Terre" width="1000"
+            height="300">
+        <div class="topRight">topRight</div>
+        <div class="topLeft">topLeft</div>
+        <div class="bottomRight">bottomRight</div>
+        <div class="bottomLeft">bottomLeft</div>
+        <div class="center">Centered</div>
+
+    </div>
 
 
 </body>
