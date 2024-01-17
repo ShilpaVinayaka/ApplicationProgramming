@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span.a {
+            display: inline;
+            /*width & height not supported*/
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+            background-color: aqua;
+        }
+
+        span.b {
+            display: inline-block;
+            /*width-height supported*/
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+            background-color: aqua;
+        }
+
+        span.c {
+            display: block;
+            /*eles don't appear adjacently 
+            like in inlineblock*/
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+            background-color: aqua;
+        }
+
+        .nav {
+            list-style-type: none;
+            /* text-align: center; */
+            margin: 0;
+            padding: 0;
+            color: rgb(255, 255, 255);
+        }
+
+        .nav li {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(152, 45, 251);
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>display: inline</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+        consequat. Aliquam erat volutpat.
+        <span class="a">Aliquam</span>
+        <span class="a">venenatis</span> gravida nisl
+        sit amet facilisis. Nullam cursus fermentum velit
+        sed laoreet.
+    </div>
+
+    <h2>display: inline-block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+        consequat. Aliquam erat volutpat.
+        <span class="b">Aliquam</span>
+        <span class="b">venenatis</span> gravida nisl
+        sit amet facilisis. Nullam cursus fermentum velit sed
+        laoreet.
+    </div>
+
+    <h2>display: block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+        consequat. Aliquam erat volutpat.
+        <span class="c">Aliquam</span>
+        <span class="c">venenatis</span> gravida nisl
+        sit amet facilisis. Nullam cursus fermentum velit sed
+        laoreet.
+    </div>
+    <br>
+
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+
+</body>
+
+</html>
